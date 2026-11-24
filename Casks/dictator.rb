@@ -14,7 +14,7 @@ cask "dictator" do
     regex(/^v?(\d+(?:\.\d+)+(?:-[\w.]+)?)$/i)
   end
 
-  depends_on macos: ">= :big_sur"
+  depends_on :macos
 
   app "Dictator.app"
   binary "#{appdir}/Dictator.app/Contents/MacOS/dictator"
