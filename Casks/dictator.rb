@@ -20,6 +20,7 @@ cask "dictator" do
   binary "#{appdir}/Dictator.app/Contents/MacOS/dictator"
 
   zap trash: [
+    "~/.cmake/packages/Dictator",
     "~/Library/Application Support/dictator",
     "~/Library/Preferences/io.github.golovinengineer.dictator.plist",
     "~/Library/Saved Application State/io.github.golovinengineer.dictator.savedState",
@@ -30,5 +31,8 @@ cask "dictator" do
     Homebrew quarantines cask downloads, so macOS blocks the first start.
     Open System Settings > Privacy & Security and click "Open Anyway", or run:
       xattr -dr com.apple.quarantine #{appdir}/Dictator.app
+
+    To use Dictator from CMake (find_package(Dictator)), run once:
+      dictator cmake install
   EOS
 end
