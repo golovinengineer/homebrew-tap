@@ -1,6 +1,6 @@
 cask "dictator" do
-  version "0.1.0-alpha.1"
-  sha256 "870d97fc43b945fdd0cabba7ad81c90ebd77be47447f7dded00eec576bcc4cd1"
+  version "0.1.0-alpha.2"
+  sha256 "06e1eb27a21afa6affdb42b7afe45e40335f7ee545edef68438fb7632e45bcde"
 
   url "https://github.com/golovinengineer/canopen-dictator/releases/download/v#{version}/Dictator-#{version}-macos-universal.zip"
   name "Dictator"
